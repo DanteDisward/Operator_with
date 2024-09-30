@@ -28,7 +28,7 @@ class WordsFinder:
         count_word = {}
         for name, words in text.items():
             if word.lower() in words:
-                count_word[name] = words.count(word.lower())
+                count_word[name] = words.count(word.lower()) + 1
         return count_word
 
 
